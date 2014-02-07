@@ -45,7 +45,7 @@ console.log("listening on port: "+port );
 if (env === 'development'){
 	mongoose.connect('mongodb://localhost/multivision');
 } else {
-	mongoose.connect('mongodb://entrymaker:89jd11m!@ds061558.mongolab.com:61558/muenti');
+	mongoose.connect('---');
 }
 var db = mongoose.connection;
 db.on('error', console.error.bind(console,'connection error...'));
